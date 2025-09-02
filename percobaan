@@ -1,0 +1,59 @@
+<?php
+// pengulangan
+//for
+for( $i = 0; $i < 5; $i++) {
+    echo "ini for! <br>";
+}
+
+//while 
+$i = 0;
+while ( $i < 5 ) {
+    echo "ini while! <br>";
+$i++;
+}
+
+//do while
+$i = 0;
+do {
+    echo "ini do while! <br>";
+$i++;
+} while ( $i < 5 );
+
+?>
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>kolom dan baris</title>
+<body>
+
+<table border="1" cellpadding="10" cellspacing="0"> 
+    <?php
+    for ( $i = 1; $i <= 5; $i++ ) {
+        echo "<tr>";
+        for ($j = 1; $j <= 5; $j++ ) {
+            echo "<td>$i, $j</td>";
+        }
+        echo "</tr>";
+    }
+
+//pengkondisaian / percabangan
+//if 
+$x = 20;
+if ($x < 20 ) {
+    echo "benar";
+} else if ( $x == 20 ) {
+    echo "winner!";
+}
+else {
+    echo "salah";
+}
+
+
+?>
+
+
+
+
+
